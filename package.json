@@ -1,0 +1,31 @@
+{
+    "name": "eslint-config-pixel",
+    "version": "1.0.0",
+    "description": "ESLint config for Next.js with typescript maintained and used by Pixel Perfect Agency",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "Pixel Perfect Agency (https://pixelperfect.agency)",
+    "contributors": [
+        {
+            "name": "Willem-Jaap",
+            "url": "https://github.com/Willem-Jaap"
+        }
+    ],
+    "scripts": {},
+    "peerDependencies": {
+        "eslint": "^7.32.0 || ^8.2.0",
+        "stylelint": "^14.0.0",
+        "typescript": "^4.5.0"
+    },
+    "devDependencies": {
+        "@rushstack/eslint-patch": "^1.2.0",
+        "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "eslint-config-prettier": "^8.8.0"
+    },
+    "exports": {
+        ".": "./index.js",
+        "./prettier": "./prettier.js"
+    }
+}
