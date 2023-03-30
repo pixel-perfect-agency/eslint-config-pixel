@@ -22,10 +22,16 @@
         "@trivago/prettier-plugin-sort-imports": "^4.1.1",
         "@typescript-eslint/eslint-plugin": "^5.56.0",
         "@typescript-eslint/parser": "^5.56.0",
-        "eslint-config-prettier": "^8.8.0"
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2"
     },
     "exports": {
         ".": "./index.js",
         "./prettier": "./prettier.js"
-    }
+    },
+    "eslintConfig": {
+        "extends": "./eslintrc.js"
+    },
+    "prettier": "./prettier.js"
 }
