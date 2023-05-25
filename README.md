@@ -1,6 +1,6 @@
 # ESLint Config Pixel
 
-Strict ESLint configuration with Prettier maintained by Pixel Perfect Agency.
+Strict ESLint configuration with Prettier included maintained by Pixel Perfect Agency.
 
 ## Rationale
 
@@ -53,6 +53,37 @@ You can also add your own rules to the configuration file.
 }
 ```
 
+### Prettier
+
+This package also includes a complementing Prettier config, you can use it by adding the following to your `package.json` file:
+
+```json
+{
+    "prettier": "eslint-config-pixel/prettier"
+}
+```
+
+If you want to customize properties of the Prettier config, you can do so by adding a configuration file to your project root. You can find more information about this [here](https://prettier.io/docs/en/configuration.html).
+
+```js
+module.exports = {
+    ...require('eslint-config-pixel/prettier'),
+    // Specifies the order of imports and sorts them automatically.
+    // Great for usage with Typescript absolute paths.
+    importOrder: [
+        '^react$',
+        '^next$',
+        '<THIRD_PARTY_MODULES>',
+        '^~components/(.*)$',
+        '^~hooks/(.*)$',
+        '^~styles/(.*)$',
+        '^~types/(.*)$',
+        '^~/(.*)$',
+        '^[./]',
+    ],
+};
+```
+
 ## Rules
 
 This package extends the following packages:
@@ -65,7 +96,7 @@ This package extends the following packages:
 
 ### Examples
 
-Some examples of the rules that are included in this package, as mentioned before, some of these rules are very strict and should only be used by very proficient Typescript developers. If you don't have a lot of experience with Typescript & Javascript, you should probably use a different, less strict configuration.
+As mentioned before, some of the rules that are included in this package are very strict and should only be used by very proficient Typescript developers. If you don't have a lot of experience with Typescript & Javascript, you should probably use a different, less strict configuration. If you do not have a lot of experience these rules will probably be very annoying and you will not fully understand why they are there, also, if you are creating a simple side project these rules will probably be overkill and make you less productive.
 
 `@typescript-eslint/prefer-for-of`
 
