@@ -30,11 +30,14 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/consistent-type-imports': 'warn',
         '@typescript-eslint/ban-types': 'error',
-        "@typescript-eslint/no-misused-promises": [2, {
-            "checksVoidReturn": {
-              "attributes": false
-            }
-        }],
+        '@typescript-eslint/no-misused-promises': [
+            2,
+            {
+                checksVoidReturn: {
+                    attributes: false,
+                },
+            },
+        ],
         'react/hook-use-state': 'warn',
         'react/self-closing-comp': [
             'warn',
@@ -50,5 +53,6 @@ module.exports = {
                 unnamedComponents: 'arrow-function',
             },
         ],
+        'react/react-in-jsx-scope': 'off',
     },
 };
