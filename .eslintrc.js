@@ -1,4 +1,3 @@
-// @eslint-ignore
 module.exports = {
     parserOptions: { project: './tsconfig.json' },
     parser: '@typescript-eslint/parser',
@@ -54,5 +53,17 @@ module.exports = {
             },
         ],
         'react/react-in-jsx-scope': 'off',
+        'no-restricted-imports': [
+            'error',
+            {
+                patterns: [
+                    {
+                        group: ['./*'],
+                        message:
+                            'Please use absolute imports instead. Take a look at the paths in tsconfig.json for available options.',
+                    },
+                ],
+            },
+        ],
     },
 };
