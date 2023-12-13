@@ -65,15 +65,22 @@ This package also includes a complementing Prettier config, you can use it by ad
 
 If you want to customize properties of the Prettier config, you can do so by adding a configuration file to your project root. You can find more information about this [here](https://prettier.io/docs/en/configuration.html).
 
+We recommend installing the following plugins for Prettier:
+
+-   [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+-   [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)
+
 ```js
 module.exports = {
-    ...require('eslint-config-pixel/prettier'),
+    ...require('eslint-config-pixel/prettier/base'),
     // Specifies the order of imports and sorts them automatically.
     // Great for usage with Typescript absolute paths.
+    plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
     importOrder: [
         '^react$',
         '^next$',
         '<THIRD_PARTY_MODULES>',
+        '',
         '^~components/(.*)$',
         '^~hooks/(.*)$',
         '^~styles/(.*)$',

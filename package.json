@@ -32,5 +32,5 @@
     "eslintConfig": {
         "extends": "./eslintrc.js"
     },
-    "prettier": "./prettier.js"
+    "prettier": "./prettier"
 }
