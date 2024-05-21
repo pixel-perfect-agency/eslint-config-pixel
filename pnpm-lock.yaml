@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@rushstack/eslint-patch':
     specifier: ^1.6.0
-    version: 1.10.2
+    version: 1.10.3
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.13.2
     version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.5)
@@ -121,8 +121,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@rushstack/eslint-patch@1.10.2:
-    resolution: {integrity: sha512-hw437iINopmQuxWPSUEvqE56NCPsiU8N4AYtfHmJFckclktzK9YQJieD3XkDCDH4OjL+C7zgPUh73R/nrcHrqw==}
+  /@rushstack/eslint-patch@1.10.3:
+    resolution: {integrity: sha512-qC/xYId4NMebE6w/V33Fh9gWxLgURiNYgVNObbJl2LZv0GUUItCcCqC5axQSwRaAgaxl2mELq1rMzlswaQ0Zxg==}
     dev: false
 
   /@types/json-schema@7.0.15:
