@@ -27,7 +27,7 @@
     },
     "devDependencies": {
         "eslint": "^8.55.0",
-        "typescript": "^6.0.2"
+        "typescript": "^7.0.2"
     },
     "eslintConfig": {
         "extends": "./eslintrc.js"
